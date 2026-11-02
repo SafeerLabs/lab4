@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.card {
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* used to hide the screen we are not using */
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+button.small {
+    font-size: 12px;
+    background-color: #888;
+}
+
+.error {
+    color: red;
+}
+
+#pet-face {
+    font-size: 80px;
+    margin: 10px 0;
+}
+
+#pet-message {
+    font-style: italic;
+    min-height: 20px;
+}
+
+/* stat bars */
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.stat span:first-child {
+    width: 80px;
+    text-align: left;
+}
+
+.bar {
+    flex: 1;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    width: 50%;
+    background-color: #4caf50;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+/* the background of the card changes depending on the pet's state */
+.state-happy {
+    background-color: #e8f8e8;
+}
+
+.state-hungry {
+    background-color: #fff4e0;
+}
+
+.state-tired {
+    background-color: #e8e8ff;
+}
+
+.state-sad {
+    background-color: #ffe8e8;
+}
+
+.state-gone {
+    background-color: #ccc;
+}

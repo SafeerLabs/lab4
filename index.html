@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Virtual Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>My Virtual Pet</h1>
+
+    <!-- Step 1: the user names their pet -->
+    <div id="start-screen" class="card">
+        <p>Welcome! Give your new pet a name to get started.</p>
+        <input type="text" id="name-input" placeholder="Pet name...">
+        <button id="start-btn">Adopt Pet</button>
+        <p id="name-error" class="error"></p>
+    </div>
+
+    <!-- Step 2: the actual game (hidden until the pet has a name) -->
+    <div id="game-screen" class="card hidden">
+        <h2 id="pet-name"></h2>
+
+        <div id="pet-face">🙂</div>
+        <p id="pet-message">Hello!</p>
+
+        <!-- stats -->
+        <div class="stat">
+            <span>Hunger</span>
+            <div class="bar">
+                <div id="hunger-bar" class="fill"></div>
+            </div>
+            <span id="hunger-text">0</span>
+        </div>
+        <div class="stat">
+            <span>Energy</span>
+            <div class="bar">
+                <div id="energy-bar" class="fill"></div>
+            </div>
+            <span id="energy-text">0</span>
+        </div>
+        <div class="stat">
+            <span>Happiness</span>
+            <div class="bar">
+                <div id="happy-bar" class="fill"></div>
+            </div>
+            <span id="happy-text">0</span>
+        </div>
+
+        <!-- actions -->
+        <div class="buttons">
+            <button id="feed-btn">🍖 Feed</button>
+            <button id="play-btn">🎾 Play</button>
+            <button id="sleep-btn">😴 Sleep</button>
+        </div>
+
+        <p id="action-count">Actions taken: 0</p>
+        <button id="reset-btn" class="small">Start Over</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
